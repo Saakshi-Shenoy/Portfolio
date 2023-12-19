@@ -3,7 +3,7 @@ import { Navbar } from 'flowbite-react';
 
 function Header() {
   return (
-    <div>
+    <div style={{fontFamily:"Montserrat"}}>
     <Navbar fluid className="bg-teal-800 lg:h-16 md:h-16">
       <Navbar.Brand href="/">
       <span className="self-center whitespace-nowrap text-xl font-semibold md:ml-10 lg:ml-10 text-white lg:mt-2 md:mt-2">Saakshi's Portfolio</span>
