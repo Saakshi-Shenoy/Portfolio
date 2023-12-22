@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { Navbar } from "flowbite-react";
 import { Link } from "react-router-dom";
 
 function Header() {
-  const [selectedNavItem, setSelectedNavItem] = useState("");
 
   const handleNavItemClick = (itemName) => {
-    setSelectedNavItem(itemName);
+    const element = document.getElementById(itemName);
+    if(element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -25,9 +27,7 @@ function Header() {
             <Navbar.Link
               as={Link}
               to="/about"
-              className={`text-xl font-semibold text-white lg:mt-2 md:mt-2 hover:text-teal-800 md:hover:text-white ${
-                selectedNavItem === "about" ? "underline" : ""
-              }`}
+              className="text-xl font-semibold text-white lg:mt-2 md:mt-2 hover:text-teal-800 md:hover:text-white focus:underline mb-1"
               onClick={() => handleNavItemClick("about")}
             >
               About
@@ -38,9 +38,7 @@ function Header() {
             <Navbar.Link
               as={Link}
               to="/projects"
-              className={`text-xl font-semibold text-white lg:mt-2 md:mt-2 hover:text-teal-800 md:hover:text-white ${
-                selectedNavItem === "projects" ? "underline" : ""
-              }`}
+              className="text-xl font-semibold text-white lg:mt-2 md:mt-2 hover:text-teal-800 md:hover:text-white focus:underline mb-1"
               onClick={() => handleNavItemClick("projects")}
             >
               Projects
@@ -51,9 +49,7 @@ function Header() {
             <Navbar.Link
               as={Link}
               to="/experience"
-              className={`text-xl font-semibold text-white lg:mt-2 md:mt-2 hover:text-teal-800 md:hover:text-white ${
-                selectedNavItem === "experience" ? "underline" : ""
-              }`}
+              className="text-xl font-semibold text-white lg:mt-2 md:mt-2 hover:text-teal-800 md:hover:text-white focus:underline mb-1"
               onClick={() => handleNavItemClick("experience")}
             >
               Experience
