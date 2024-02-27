@@ -49,20 +49,22 @@ function About(props) {
                         href="https://www.linkedin.com/in/saakshi-shenoy/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="duration-500 ease-in-out hover:scale-110"
                       >
                         <BsLinkedin
-                          style={{ color: "teal", fontSize: "22px" }}
+                          style={{ color: "teal", fontSize: "24px" }}
                         />
                       </a>
-                      <a href={`mailto:${emailAddress}`}>
-                        <IoMdMail style={{ color: "teal", fontSize: "22px" }} />
+                      <a href={`mailto:${emailAddress}`} className="duration-500 ease-in-out hover:scale-110">
+                        <IoMdMail style={{ color: "teal", fontSize: "26px" }} />
                       </a>
                       <a
                         href="https://github.com/Saakshi-Shenoy"
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="duration-500 ease-in-out hover:scale-110"
                       >
-                        <BsGithub style={{ color: "teal", fontSize: "22px" }} />
+                        <BsGithub style={{ color: "teal", fontSize: "24px" }} />
                       </a>
                     </div>
                   </div>
@@ -71,7 +73,7 @@ function About(props) {
             </div>
             <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
               <h1
-                className="title-font sm:text-3xl mb-4 font-bold text-gray-900 pb-3"
+                className="title-font sm:text-3xl mb-4 font-bold text-teal-800 pb-3"
                 style={{ fontSize: "4em", fontFamily: "Montserrat" }}
               >
                 Hello!<br className="hidden lg:inline-block"></br>

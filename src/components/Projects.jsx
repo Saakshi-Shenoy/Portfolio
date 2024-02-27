@@ -13,7 +13,8 @@ function Projects() {
             PROJECTS
           </h1>
       <div className="flex flex-wrap -m-4 p-4">
-        <div className="xl:w-1/4 md:w-1/2 p-4">
+        <div className="xl:w-1/4 md:w-1/2 p-4 duration-500 ease-in-out hover:scale-105">
+        <a href='https://github.com/Saakshi-Shenoy/NewsMon'>
           <div className="bg-teal-800 p-6 rounded-lg">
             <img
               className="h-40 rounded w-full object-cover object-center mb-6"
@@ -30,8 +31,11 @@ function Projects() {
               A fully responsive website that provides timely coverage and other information about important events around the globe through the usage of APIs.
             </p>
           </div>
+          </a>
         </div>
-        <div className="xl:w-1/4 md:w-1/2 p-4">
+        
+        <div className="xl:w-1/4 md:w-1/2 p-4 duration-500 ease-in-out hover:scale-105">
+          <a href='https://github.com/Saakshi-Shenoy/FoodApp'>
           <div className="bg-teal-800 p-6 rounded-lg">
             <img
               className="h-40 rounded w-full object-cover object-center mb-6"
@@ -48,8 +52,10 @@ function Projects() {
               A responsive and robust food ordering and delivery website designed to streamline and expedite the food delivery process.
             </p>
           </div>
+          </a>
         </div>
-        <div className="xl:w-1/4 md:w-1/2 p-4">
+        <div className="xl:w-1/4 md:w-1/2 p-4 duration-500 ease-in-out hover:scale-105">
+          <a href='https://github.com/Saakshi-Shenoy/SmartSpend'>
           <div className="bg-teal-800 p-6 rounded-lg">
             <img
               className="h-40 rounded w-full object-cover object-center mb-6"
@@ -66,8 +72,10 @@ function Projects() {
               An expense tracking website that includes the features of budget management, financial insights, peer-to-peer lending and reminders.
             </p>
           </div>
+          </a>
         </div>
-        <div className="xl:w-1/4 md:w-1/2 p-4">
+        <div className="xl:w-1/4 md:w-1/2 p-4 duration-500 ease-in-out hover:scale-105">
+          <a href='https://github.com/Saakshi-Shenoy/Catalysis2.0'>
           <div className="bg-teal-800 p-6 rounded-lg">
             <img
               className="h-40 rounded w-full object-cover object-center mb-6"
@@ -84,6 +92,7 @@ function Projects() {
               Contribution to a college event website for a Technical fest that provides details regarding the events and facilitates the feature of registration to the events.
             </p>
           </div>
+          </a>
         </div>
       </div>
     </div>
