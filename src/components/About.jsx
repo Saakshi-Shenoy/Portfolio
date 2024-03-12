@@ -6,10 +6,13 @@ import ME from "../assets/me.jpeg";
 
 function About(props) {
   const emailAddress = "shenoy.saakshi910@gmail.com";
+  
+
+  // https://drive.google.com/u/0/uc?id=1OenKMmwgl2KXui96VK-cuScG0rFLxa_Q&export=download
 
   const handleDownload = () => {
     const fileUrl =
-      "https://drive.google.com/u/0/uc?id=1OenKMmwgl2KXui96VK-cuScG0rFLxa_Q&export=download";
+      "https://drive.google.com/file/d/1XoNPwjyvRQD14Dx5TJ6likl9J_RJV7ka/view?export=download";
     const link = document.createElement("a");
     link.href = fileUrl;
     link.download = "SaakshiShenoy_Resume";
