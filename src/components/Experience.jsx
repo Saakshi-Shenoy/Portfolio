@@ -19,45 +19,57 @@ function Experience() {
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(995,995,995)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(995,995,995)" }}
-          date="2023 - present"
+          date="November 2022 - present"
           iconStyle={{ color: "#000", backgroundColor: "#fff" }}
           icon=""
         >
-          <h3 className="vertical-timeline-element-title text-black">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle text-black">Miami, FL</h4>
+          <h3 className="vertical-timeline-element-title text-black">
+            Web Developer
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle text-black">
+            Genesis Student Forum - DSCE, Bangalore
+          </h4>
           <p className="text-black">
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
+            Development of clean and robust websites to provide information and
+            facilitate the registration to events organised by the Department of
+            Information Science and Engineering.
           </p>
         </VerticalTimelineElement>
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(995,995,995)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(995,995,995)" }}
-          date="2023 - present"
+          date="August 2023 - October 2023"
           iconStyle={{ color: "#000", backgroundColor: "#fff" }}
           icon=""
         >
-          <h3 className="vertical-timeline-element-title text-black">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle text-black">Miami, FL</h4>
+          <h3 className="vertical-timeline-element-title text-black">Intern</h3>
+          <h4 className="vertical-timeline-element-subtitle text-black">
+            Emertxe Information Technologies - WebStack Academy
+          </h4>
           <p className="text-black">
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
+            MERN Stack Web Development
+            <br /> Internship involved the development of a comprehensive Food
+            Delivery Website.
           </p>
         </VerticalTimelineElement>
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(995,995,995)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(995,995,995)" }}
-          date="2023 - present"
+          date="October 2022 - December 2022"
           iconStyle={{ color: "#000", backgroundColor: "#fff" }}
           icon=""
         >
-          <h3 className="vertical-timeline-element-title text-black">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle text-black">Miami, FL</h4>
+          <h3 className="vertical-timeline-element-title text-black">Intern</h3>
+          <h4 className="vertical-timeline-element-subtitle text-black">
+            Dayanand Sagar College of Engineering, Bangalore
+          </h4>
           <p className="text-black">
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
+            UI Design, Frontend Development <br /> Internship ended with the
+            completion of a Team Project.
           </p>
         </VerticalTimelineElement>
 
