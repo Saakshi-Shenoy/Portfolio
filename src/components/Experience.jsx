@@ -4,6 +4,9 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import genesis from "../assets/genesis.png";
+import websa from "../assets/websa.jpg";
+import dsce from "../assets/dsce.jpg";
 
 function Experience() {
   return (
@@ -21,7 +24,7 @@ function Experience() {
           contentArrowStyle={{ borderRight: "7px solid  rgb(995,995,995)" }}
           date="November 2022 - present"
           iconStyle={{ color: "#000", backgroundColor: "#fff" }}
-          icon=""
+          icon={<img src={genesis} alt="myLogo" className="rounded-full" />}
         >
           <h3 className="vertical-timeline-element-title text-black">
             Web Developer
@@ -42,7 +45,7 @@ function Experience() {
           contentArrowStyle={{ borderRight: "7px solid  rgb(995,995,995)" }}
           date="August 2023 - October 2023"
           iconStyle={{ color: "#000", backgroundColor: "#fff" }}
-          icon=""
+          icon={<img src={websa} alt="myLogo" className="rounded-full" />}
         >
           <h3 className="vertical-timeline-element-title text-black">Intern</h3>
           <h4 className="vertical-timeline-element-subtitle text-black">
@@ -61,7 +64,7 @@ function Experience() {
           contentArrowStyle={{ borderRight: "7px solid  rgb(995,995,995)" }}
           date="October 2022 - December 2022"
           iconStyle={{ color: "#000", backgroundColor: "#fff" }}
-          icon=""
+          icon={<img src={dsce} alt="myLogo" className="rounded-full" />}
         >
           <h3 className="vertical-timeline-element-title text-black">Intern</h3>
           <h4 className="vertical-timeline-element-subtitle text-black">
