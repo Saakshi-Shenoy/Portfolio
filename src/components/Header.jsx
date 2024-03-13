@@ -1,65 +1,96 @@
-import React from "react";
-import { Navbar } from "flowbite-react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
 
-  // const handleNavItemClick = (itemName) => {
-  //   const element = document.getElementById(itemName);
-  //   if(element) {
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  // const scrollToSection = (sectionId) => {
+  //   const element = document.getElementById(sectionId);
+  //   if (element) {
   //     element.scrollIntoView({ behavior: "smooth" });
   //   }
   // };
 
   return (
-    <div style={{ fontFamily: "Montserrat" }}>
-      <Navbar fluid className="bg-teal-800 lg:h-20 md:h-20 pt-4">
-        <Navbar.Brand as={Link} to="/">
-          <span className="self-center whitespace-nowrap text-3xl font-bold md:ml-10 lg:ml-10 text-white lg:mt-2 md:mt-2">
-            Saakshi's Portfolio
-          </span>
-        </Navbar.Brand>
-        <div className="flex md:order-2">
-          <Navbar.Toggle />
-        </div>
-        <Navbar.Collapse className="ml-auto mr-10">
-          <button className="font-bold duration-500 ease-in-out hover:scale-110">
-            <Navbar.Link
-              as={Link}
-              to="/about"
-              className="text-xl font-semibold text-white lg:mt-2 md:mt-2 hover:text-teal-800 md:hover:text-white focus:underline mb-1"
-              // onClick={() => handleNavItemClick("about")}
+    <div id="header" style={{ fontFamily: "Montserrat" }}>
+      <header className="text-gray-400 bg-teal-800 body-font">
+        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <div className="flex justify-between items-center w-full md:w-auto">
+            <a
+              href="/"
+              className="flex title-font font-medium items-center text-white mb-4 md:mb-0"
+            >
+              <span className="self-center whitespace-nowrap text-3xl font-bold md:ml-10 lg:ml-10 text-white md:mt-2">
+                Saakshi's Portfolio
+              </span>
+            </a>
+
+            <button
+              onClick={toggleMenu}
+              className="md:hidden inline-flex items-center justify-center mb-4 rounded-md text-gray-400 hover:text-white focus:outline-none"
+            >
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                {isOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
+
+          <nav
+            className={`md:ml-auto flex flex-wrap items-center text-base justify-center gap-5 ${
+              isOpen ? "block" : "hidden"
+            } md:flex`}
+          >
+            <a
+              // href="/#about" for scrollintoview
+              href="/about"
+              className="text-white font-semibold text-xl duration-500 ease-in-out hover:scale-110"
+              // onClick={() => scrollToSection("about")}
             >
               About
-            </Navbar.Link>
-          </button>
-
-          <button className="font-bold duration-500 ease-in-out hover:scale-110">
-            <Navbar.Link
-              as={Link}
-              to="/projects"
-              className="text-xl font-semibold text-white lg:mt-2 md:mt-2 hover:text-teal-800 md:hover:text-white focus:underline mb-1"
-              // onClick={() => handleNavItemClick("projects")}
+            </a>
+            <a
+              // href="/#projects" for scrollintoview
+              href="/projects"
+              className="text-white font-semibold text-xl duration-500 ease-in-out hover:scale-110"
+              // onClick={() => scrollToSection("projects")}
             >
               Projects
-            </Navbar.Link>
-          </button>
-
-          <button className="font-bold duration-500 ease-in-out hover:scale-110">
-            <Navbar.Link
-              as={Link}
-              to="/experience"
-              className="text-xl font-semibold text-white lg:mt-2 md:mt-2 hover:text-teal-800 md:hover:text-white focus:underline mb-1"
-              // onClick={() => handleNavItemClick("experience")}
+            </a>
+            <a
+              // href="/#experience"
+              href="/experience"
+              className="text-white font-semibold text-xl duration-500 ease-in-out hover:scale-110"
+              // onClick={() => scrollToSection("experience")}
             >
               Experience
-            </Navbar.Link>
-          </button>
-        </Navbar.Collapse>
-      </Navbar>
+            </a>
+          </nav>
+        </div>
+      </header>
     </div>
   );
 }
 
 export default Header;
-

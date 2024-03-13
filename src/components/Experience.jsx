@@ -8,9 +8,14 @@ import genesis from "../assets/genesis.png";
 import websa from "../assets/websa.jpg";
 import dsce from "../assets/dsce.jpg";
 
+
 function Experience() {
   return (
-    <div className="bg-teal-800" style={{ fontFamily: "Montserrat" }}>
+    <div
+      id="experience"
+      className="bg-teal-800 "
+      style={{ fontFamily: "Montserrat" }}
+    >
       <h1
         className="sm:text-3xl text-3xl text-white font-bold title-font mb-10 pt-5 text-gray-900 items-center text-center justify-center"
         style={{ fontSize: "2.5em", fontWeight: "730" }}

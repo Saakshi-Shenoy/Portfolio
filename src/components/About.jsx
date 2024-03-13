@@ -6,8 +6,6 @@ import ME from "../assets/me.jpeg";
 
 function About(props) {
   const emailAddress = "shenoy.saakshi910@gmail.com";
-  
-
   // https://drive.google.com/u/0/uc?id=1OenKMmwgl2KXui96VK-cuScG0rFLxa_Q&export=download
 
   const handleDownload = () => {
@@ -22,15 +20,15 @@ function About(props) {
   };
 
   return (
-    <section className="text-gray-600 body-font">
+    <section id="about" className="text-gray-600 body-font ">
       <div className="container px-5 py-8 mx-auto flex flex-col">
         <div className="lg:w-4/6 mx-auto">
-          <div className="flex flex-col sm:flex-row mt-10">
+          <div className="flex flex-col sm:flex-row mt-5">
             <div className="sm:w-1/3 text-center sm:pr-8 sm:py-7">
-              <div className="rounded-full w-40 inline-flex items-center justify-center text-gray-400">
+              <div className="rounded-full inline-flex items-center justify-center text-gray-400">
                 <img
                   src={ME}
-                  className="mb-3 rounded-full h-45 w-45"
+                  className="mb-3 rounded-full h-60 w-50"
                   alt="Saakshi Shenoy"
                 />
               </div>
@@ -38,11 +36,14 @@ function About(props) {
                 className="flex flex-col items-center text-center justify-center"
                 style={{ fontFamily: "Montserrat" }}
               >
-                <h2 className="title-font font-bold mt-4 text-gray-900 text-2xl pb-2" style={{fontSize: "1.7em"}}>
+                <h2
+                  className="title-font font-bold mt-2 text-gray-900 text-2xl pb-2"
+                  style={{ fontSize: "1.7em" }}
+                >
                   SAAKSHI SHENOY
                 </h2>
                 <div className="w-20 h-1 bg-teal-500 rounded mt-2 mb-4"></div>
-                <span className="text-sm text-gray-600 pb-7">
+                <span className="text-sm text-gray-600 pb-5">
                   MERN-Stack Web Developer | C | C++ Programmer
                 </span>
                 <div className="w-full">
@@ -58,7 +59,10 @@ function About(props) {
                           style={{ color: "teal", fontSize: "24px" }}
                         />
                       </a>
-                      <a href={`mailto:${emailAddress}`} className="duration-500 ease-in-out hover:scale-110">
+                      <a
+                        href={`mailto:${emailAddress}`}
+                        className="duration-500 ease-in-out hover:scale-110"
+                      >
                         <IoMdMail style={{ color: "teal", fontSize: "26px" }} />
                       </a>
                       <a
@@ -102,7 +106,7 @@ function About(props) {
                 style={{ fontFamily: "Montserrat" }}
               >
                 <button
-                  class="cursor-pointer transition-all bg-teal-700 text-white px-6 py-2 rounded-lg border-teal-500
+                  className="cursor-pointer transition-all bg-teal-700 text-white px-6 py-2 rounded-lg border-teal-500
                     border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
                     active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
                   onClick={handleDownload}
