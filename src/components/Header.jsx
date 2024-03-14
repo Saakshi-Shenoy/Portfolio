@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import "../App.css";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,9 +15,20 @@ function Header() {
   //   }
   // };
 
+  const scrollRef = useRef();
+
+  const scrollToSection = (item) => {
+    // Scroll to the corresponding section
+    if (scrollRef.current) {
+      scrollRef.current.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false);
+    }
+    // Handle other navigation logic if needed
+  };
+
   return (
     <div id="header" style={{ fontFamily: "Montserrat" }}>
-      <header className="text-gray-400 bg-teal-800 body-font">
+      <header className="fixed top-0 z-50 w-screen text-gray-400 bg-teal-800 body-font">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <div className="flex justify-between items-center w-full md:w-auto">
             <a
@@ -63,26 +75,26 @@ function Header() {
             } md:flex`}
           >
             <a
-              // href="/#about" for scrollintoview
-              href="/about"
+              href="/#about" 
+              // href="/about"
               className="text-white font-semibold text-xl duration-500 ease-in-out hover:scale-110"
               // onClick={() => scrollToSection("about")}
             >
               About
             </a>
             <a
-              // href="/#projects" for scrollintoview
-              href="/projects"
+              href="/#projects" 
+              // href="/projects"
               className="text-white font-semibold text-xl duration-500 ease-in-out hover:scale-110"
-              // onClick={() => scrollToSection("projects")}
+              onClick={() => scrollToSection("projects")}
             >
               Projects
             </a>
             <a
-              // href="/#experience"
-              href="/experience"
-              className="text-white font-semibold text-xl duration-500 ease-in-out hover:scale-110"
-              // onClick={() => scrollToSection("experience")}
+              href="/#experience"
+              // href="/experience"
+              className="mr-5 text-white font-semibold text-xl duration-500 ease-in-out hover:scale-110"
+              onClick={() => scrollToSection("experience")}
             >
               Experience
             </a>

@@ -13,12 +13,12 @@ function Experience() {
   return (
     <div
       id="experience"
-      className="bg-teal-800 "
+      className="bg-teal-800 mt-10 "
       style={{ fontFamily: "Montserrat" }}
     >
       <h1
-        className="sm:text-3xl text-3xl text-white font-bold title-font mb-10 pt-5 text-gray-900 items-center text-center justify-center"
-        style={{ fontSize: "2.5em", fontWeight: "730" }}
+        className="sm:text-3xl text-3xl text-white font-bold title-font mb-10 text-gray-900 items-center text-center justify-center mt-10"
+        style={{ fontSize: "2.5em", fontWeight: "730", paddingTop: "90px" }}
       >
         EXPERIENCE
       </h1>

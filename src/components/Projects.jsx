@@ -7,16 +7,15 @@ import SmartSpend from "../assets/smartspend.png";
 
 function Projects() {
   return (
-    <div id="projects" className="bg-white bg-cover lg:h-screen md:h-screen">
-      
+    <div id="projects" className="bg-white bg-cover lg:h-[93vh]">
       <section
         className="text-gray-600 body-font"
         style={{ fontFamily: "Montserrat" }}
       >
-        <div className="container px-5 py-10 mx-auto">
+        <div className="container px-5 py-5 mx-auto">
           <h1
-            className="sm:text-3xl text-3xl text-teal-800 font-bold title-font mb-12 mt-5 text-gray-900 items-center text-center justify-center"
-            style={{ fontSize: "2.5em", fontWeight: "730" }}
+            className="sm:text-3xl text-3xl text-teal-800 font-bold title-font mb-12 text-gray-900 items-center text-center justify-center"
+            style={{ fontSize: "2.5em", fontWeight: "730", paddingTop: "75px" }}
           >
             PROJECTS
           </h1>
