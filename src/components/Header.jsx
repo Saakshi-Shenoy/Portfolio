@@ -72,7 +72,7 @@ function Header() {
           <nav
             className={`md:ml-auto flex flex-wrap items-center text-base justify-center gap-5 ${
               isOpen ? "block" : "hidden"
-            } md:flex`}
+            } md:flex flex-col md:flex-row`}
           >
             <a
               href="/#about" 
