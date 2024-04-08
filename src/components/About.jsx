@@ -1,11 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { BsDownload } from "react-icons/bs";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
 import ME from "../assets/me.jpeg";
 import Header from "./Header";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function About(props) {
+
+  useEffect(() => {
+    Aos.init({ duration: 1200 });
+  });
+
   const emailAddress = "shenoy.saakshi910@gmail.com";
   // https://drive.google.com/u/0/uc?id=1OenKMmwgl2KXui96VK-cuScG0rFLxa_Q&export=download
 
@@ -27,11 +34,11 @@ function About(props) {
         <div className="container px-5 py-8 mt-5 flex flex-row">
           <div className="lg:w-4/6 mx-auto">
             <div className="flex flex-col sm:flex-row mt-5">
-              <div className="sm:w-1/3 text-center sm:pr-8 sm:py-7">
+              <div className="sm:w-1/3 text-center sm:pr-8 sm:py-7" data-aos="fade-right">
                 <div className="rounded-full inline-flex items-center justify-center text-gray-400">
                   <img
                     src={ME}
-                    className="mb-3 rounded-full h-60 w-50"
+                    className="mb-3 rounded-full h-60 w-55"
                     alt="Saakshi Shenoy"
                   />
                 </div>
@@ -85,7 +92,7 @@ function About(props) {
                   </div>
                 </div>
               </div>
-              <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+              <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left" data-aos="fade-left">
                 <h1
                   className="title-font sm:text-3xl mb-4 font-bold text-teal-800 pb-3"
                   style={{ fontSize: "4em", fontFamily: "Montserrat" }}
@@ -96,7 +103,7 @@ function About(props) {
                   className="leading-relaxed text-md mb-4"
                   style={{ fontFamily: "Montserrat" }}
                 >
-                  Welcome to my portfolio! Welcome to my portfolio! I'm a
+                  Welcome to my portfolio! I'm a
                   dedicated developer with proficiency in the MERN stack, C, and
                   C++. I've honed my skills in crafting dynamic web applications
                   using MongoDB, Express.js, React, and Node.js. Recently, I've

@@ -1,9 +1,9 @@
 import React from "react";
 import Jiffy from "../assets/jiffy.png";
-import Newsmon from "../assets/newsmon.png";
+// import Newsmon from "../assets/newsmon.png";
 import Catalysis from "../assets/catalysis.png";
 import SmartSpend from "../assets/smartspend.png";
-
+import Hackman from "../assets/HackMan.png";
 
 function Projects() {
   return (
@@ -19,34 +19,13 @@ function Projects() {
           >
             PROJECTS
           </h1>
-          <div className="flex flex-wrap -m-4 p-4">
-            <div className="xl:w-1/4 md:w-1/2 p-4 duration-500 ease-in-out hover:scale-105">
-              <a href="https://github.com/Saakshi-Shenoy/NewsMon">
-                <div className="bg-teal-800 p-6 rounded-lg">
-                  <img
-                    className="h-40 rounded w-full object-cover object-center mb-6"
-                    src={Newsmon}
-                    alt="content"
-                  />
-                  <h3 className="tracking-widest text-xs font-bold title-font mb-2 text-white">
-                    FRONTEND
-                  </h3>
-                  <h2 className="text-lg text-white font-bold title-font mb-3">
-                    NEWSMON
-                  </h2>
-                  <p
-                    className="leading-relaxed text-sm text-white"
-                    style={{ fontSize: "0.9em" }}
-                  >
-                    A fully responsive website that provides timely coverage and
-                    other information about important events around the globe
-                    through the usage of APIs.
-                  </p>
-                </div>
-              </a>
-            </div>
 
-            <div className="xl:w-1/4 md:w-1/2 p-4 duration-500 ease-in-out hover:scale-105">
+          <div className="flex flex-wrap -m-4 p-4">
+            <div
+              className="xl:w-1/4 md:w-1/2 p-4 duration-500 ease-in-out hover:scale-105"
+              data-aos="zoom-in-up"
+              data-aos-duration="1700"
+            >
               <a href="https://github.com/Saakshi-Shenoy/FoodApp">
                 <div className="bg-teal-800 p-6 rounded-lg">
                   <img
@@ -71,7 +50,12 @@ function Projects() {
                 </div>
               </a>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4 duration-500 ease-in-out hover:scale-105">
+
+            <div
+              className="xl:w-1/4 md:w-1/2 p-4 duration-500 ease-in-out hover:scale-105"
+              data-aos="zoom-in-up"
+              data-aos-duration="1700"
+            >
               <a href="https://github.com/Saakshi-Shenoy/SmartSpend">
                 <div className="bg-teal-800 p-6 rounded-lg">
                   <img
@@ -96,7 +80,12 @@ function Projects() {
                 </div>
               </a>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4 duration-500 ease-in-out hover:scale-105">
+
+            <div
+              className="xl:w-1/4 md:w-1/2 p-4 duration-500 ease-in-out hover:scale-105"
+              data-aos="zoom-in-up"
+              data-aos-duration="1700"
+            >
               <a href="https://github.com/Saakshi-Shenoy/Catalysis2.0">
                 <div className="bg-teal-800 p-6 rounded-lg">
                   <img
@@ -114,9 +103,39 @@ function Projects() {
                     className="leading-relaxed text-base text-white"
                     style={{ fontSize: "0.9em" }}
                   >
-                    Contribution to a college event website for a Technical fest
-                    that provides details regarding the events and facilitates
-                    the feature of registration to the events.
+                    Contribution to an intra-college event website for a 3-Day
+                    Technical fest, Catalysis v2.0 organized by the department
+                    of ISE, DSCE.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              className="xl:w-1/4 md:w-1/2 p-4 duration-500 ease-in-out hover:scale-105"
+              data-aos="zoom-in-up"
+              data-aos-duration="1700"
+            >
+              <a href="https://hackman-v7.netlify.app/">
+                <div className="bg-teal-800 p-6 rounded-lg">
+                  <img
+                    className="h-40 rounded w-full object-center mb-6"
+                    src={Hackman}
+                    alt="content"
+                  />
+                  <h3 className="tracking-widest text-xs font-bold title-font mb-2 text-white">
+                    FULL STACK
+                  </h3>
+                  <h2 className="text-lg text-white font-bold title-font mb-3">
+                    HACKMAN v7.0
+                  </h2>
+                  <p
+                    className="leading-relaxed text-sm text-white"
+                    style={{ fontSize: "0.9em" }}
+                  >
+                    Contibution to an extravagant 30-hour inter-collegiate
+                    Hackathon organized by the Department of Information Science
+                    & Engineering at DSCE.
                   </p>
                 </div>
               </a>
