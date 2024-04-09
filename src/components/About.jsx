@@ -95,13 +95,13 @@ function About(props) {
               <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left" data-aos="fade-left">
                 <h1
                   className="title-font sm:text-3xl mb-4 font-bold text-teal-800 pb-3"
-                  style={{ fontSize: "4em", fontFamily: "Montserrat" }}
+                  style={{ fontSize: "5em", fontFamily: "Montserrat" }}
                 >
                   Hello!<br className="hidden lg:inline-block"></br>
                 </h1>
                 <p
-                  className="leading-relaxed text-md mb-4"
-                  style={{ fontFamily: "Montserrat" }}
+                  className="leading-relaxed text-md mb-5 mt-5"
+                  style={{ fontFamily: "Montserrat", fontSize: "1.1em" }}
                 >
                   Welcome to my portfolio! I'm a
                   dedicated developer with proficiency in the MERN stack, C, and

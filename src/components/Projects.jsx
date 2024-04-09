@@ -15,7 +15,7 @@ function Projects() {
         <div className="container px-5 py-5 mx-auto">
           <h1
             className="sm:text-3xl text-3xl text-teal-800 font-bold title-font mb-12 text-gray-900 items-center text-center justify-center"
-            style={{ fontSize: "2.5em", fontWeight: "730", paddingTop: "75px" }}
+            style={{ fontSize: "2.5em", fontWeight: "730", paddingTop: "100px" }}
           >
             PROJECTS
           </h1>
@@ -104,7 +104,7 @@ function Projects() {
                     style={{ fontSize: "0.9em" }}
                   >
                     Contribution to an intra-college event website for a 3-Day
-                    Technical fest, Catalysis v2.0 organized by the department
+                    Technical fest, Catalysis v2.0 organized by the Department
                     of ISE, DSCE.
                   </p>
                 </div>
@@ -133,9 +133,8 @@ function Projects() {
                     className="leading-relaxed text-sm text-white"
                     style={{ fontSize: "0.9em" }}
                   >
-                    Contibution to an extravagant 30-hour inter-collegiate
-                    Hackathon organized by the Department of Information Science
-                    & Engineering at DSCE.
+                    Contibution to the website for an extravagant 30-hour inter-collegiate
+                    Hackathon organized by the Department of ISE at DSCE.
                   </p>
                 </div>
               </a>
