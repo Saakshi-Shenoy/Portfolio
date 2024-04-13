@@ -116,7 +116,7 @@ function Projects() {
               data-aos="zoom-in-up"
               data-aos-duration="1700"
             >
-              <a href="https://hackman-v7.netlify.app/">
+              <a href="https://hackmanv7.netlify.app/">
                 <div className="bg-teal-800 p-6 rounded-lg">
                   <img
                     className="h-40 rounded w-full object-center mb-6"
