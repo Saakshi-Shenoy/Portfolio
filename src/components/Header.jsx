@@ -23,12 +23,11 @@ function Header() {
       scrollRef.current.scrollIntoView({ behavior: 'smooth' });
       setIsOpen(false);
     }
-    // Handle other navigation logic if needed
   };
 
   return (
     <div id="header" style={{ fontFamily: "Montserrat" }}>
-      <header className="fixed top-0 z-50 w-screen text-gray-400 bg-teal-800 body-font">
+      <header className="fixed top-0 z-50 sm:fixed w-screen text-gray-400 bg-teal-800 body-font ">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <div className="flex justify-between items-center w-full md:w-auto">
             <a

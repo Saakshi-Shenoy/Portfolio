@@ -6,11 +6,22 @@ import ME from "../assets/me.jpeg";
 import Header from "./Header";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { CgCPlusPlus } from "react-icons/cg";
+import {
+  DiJavascript1,
+  DiReact,
+  DiNodejs,
+  DiMongodb,
+  DiPython,
+  DiGit
+} from "react-icons/di";
+import { SiExpress } from "react-icons/si";
+import "../App.css";
 
 function About(props) {
 
   useEffect(() => {
-    Aos.init({ duration: 1200 });
+    Aos.init({ duration: 1300 });
   });
 
   const emailAddress = "shenoy.saakshi910@gmail.com";
@@ -31,10 +42,10 @@ function About(props) {
     <div id="about" className="pt-20 ">
       <Header />
       <section className="text-gray-600 body-font ">
-        <div className="container px-5 py-7 mt-2 flex flex-row">
+        <div className="container px-5 py-3 mt-2 flex flex-row">
           <div className="lg:w-4/6 mx-auto">
             <div className="flex flex-col sm:flex-row mt-5">
-              <div className="sm:w-1/3 text-center sm:pr-8 sm:py-7" data-aos="fade-right">
+              <div className="sm:w-1/3 text-center sm:pr-8 sm:py-7" data-aos="fade-in">
                 <div className="rounded-full inline-flex items-center justify-center text-gray-400">
                   <img
                     src={ME}
@@ -92,7 +103,7 @@ function About(props) {
                   </div>
                 </div>
               </div>
-              <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left" data-aos="fade-left">
+              <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left" data-aos="fade-in">
                 <h1
                   className="title-font sm:text-3xl mb-4 font-bold text-teal-800 pb-3"
                   style={{ fontSize: "5em", fontFamily: "Montserrat" }}
@@ -136,6 +147,34 @@ function About(props) {
           </div>
         </div>
       </section>
+      <div className="flex justify-center pb-5" data-aos="fade-in" data-aos-duration="1300">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-8 gap-2">
+          <div className="tech-icons">
+            <CgCPlusPlus className="w-15 h-15 " />
+          </div>
+          <div className="tech-icons">
+            <DiJavascript1 className="w-15 h-15" />
+          </div>
+          <div className="tech-icons">
+            <DiNodejs className="w-15 h-15" />
+          </div>
+          <div className="tech-icons">
+            <DiReact className="w-15 h-15" />
+          </div>
+          <div className="tech-icons">
+            <DiMongodb className="w-15 h-15" />
+          </div>
+          <div className="tech-icons">
+            <DiGit className="w-15 h-15" />
+          </div>
+          <div className="tech-icons">
+            <SiExpress className="w-15 h-15" />
+          </div>
+          <div className="tech-icons">
+            <DiPython className="w-15 h-15" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
