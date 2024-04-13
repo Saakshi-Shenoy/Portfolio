@@ -55,3 +55,13 @@
     padding: 20px !important;
     line-height: 1.6 !important;
   }
+
+  .dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.95, 0.01, 0.01, 0.95); 
+  }
+  
+  .dropdown-menu.open {
+    max-height: 200px; 
+  }

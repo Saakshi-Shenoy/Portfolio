@@ -8,13 +8,6 @@ function Header() {
     setIsOpen(!isOpen);
   };
 
-  // const scrollToSection = (sectionId) => {
-  //   const element = document.getElementById(sectionId);
-  //   if (element) {
-  //     element.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
-
   const scrollRef = useRef();
 
   const scrollToSection = (item) => {
@@ -69,13 +62,12 @@ function Header() {
           </div>
 
           <nav
-            className={`md:ml-auto flex flex-wrap items-center text-base justify-center gap-5 ${
-              isOpen ? "block" : "hidden"
+            className={`md:ml-auto flex flex-wrap items-center text-base justify-center gap-5 dropdown-menu ${
+              isOpen ? 'open' : ''
             } md:flex flex-col md:flex-row`}
           >
             <a
-              href="/#about" 
-              // href="/about"
+              href="/#about"
               className="text-white font-semibold text-xl duration-500 ease-in-out hover:scale-110"
               // onClick={() => scrollToSection("about")}
             >
@@ -83,7 +75,6 @@ function Header() {
             </a>
             <a
               href="/#projects" 
-              // href="/projects"
               className="text-white font-semibold text-xl duration-500 ease-in-out hover:scale-110"
               onClick={() => scrollToSection("projects")}
             >
@@ -91,7 +82,6 @@ function Header() {
             </a>
             <a
               href="/#experience"
-              // href="/experience"
               className="mr-5 text-white font-semibold text-xl duration-500 ease-in-out hover:scale-110"
               onClick={() => scrollToSection("experience")}
             >
