@@ -15,7 +15,7 @@ import {
   DiPython,
   DiGit
 } from "react-icons/di";
-import { SiExpress } from "react-icons/si";
+import { SiExpress, SiMysql } from "react-icons/si";
 import "../App.css";
 
 function About(props) {
@@ -59,7 +59,7 @@ function About(props) {
                 >
                   <h2
                     className="title-font font-bold mt-2 text-gray-900 text-2xl pb-2"
-                    style={{ fontSize: "1.7em" }}
+                    style={{ fontSize: "1.6em" }}
                   >
                     SAAKSHI SHENOY
                   </h2>
@@ -147,8 +147,8 @@ function About(props) {
           </div>
         </div>
       </section>
-      <div className="flex justify-center pb-5" data-aos="fade-in" data-aos-duration="1300">
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-8 gap-2">
+      <div className="flex justify-center pb-5" data-aos="fade-up" data-aos-duration="1300">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-9 gap-2">
           <div className="tech-icons">
             <CgCPlusPlus className="w-15 h-15 " />
           </div>
@@ -156,19 +156,22 @@ function About(props) {
             <DiJavascript1 className="w-15 h-15" />
           </div>
           <div className="tech-icons">
+            <DiReact className="w-15 h-15" />
+          </div>
+          <div className="tech-icons">
             <DiNodejs className="w-15 h-15" />
           </div>
           <div className="tech-icons">
-            <DiReact className="w-15 h-15" />
+            <SiExpress className="w-15 h-15" />
           </div>
           <div className="tech-icons">
             <DiMongodb className="w-15 h-15" />
           </div>
           <div className="tech-icons">
-            <DiGit className="w-15 h-15" />
+            <SiMysql className="w-15 h-15" />
           </div>
           <div className="tech-icons">
-            <SiExpress className="w-15 h-15" />
+            <DiGit className="w-15 h-15" />
           </div>
           <div className="tech-icons">
             <DiPython className="w-15 h-15" />
