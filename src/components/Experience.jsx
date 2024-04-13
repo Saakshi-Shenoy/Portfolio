@@ -7,13 +7,13 @@ import "react-vertical-timeline-component/style.min.css";
 import genesis from "../assets/genesis.png";
 import websa from "../assets/websa.jpg";
 import dsce from "../assets/dsce.jpg";
-
+import "../App.css";
 
 function Experience() {
   return (
     <div
       id="experience"
-      className="bg-teal-800 mt-10 "
+      className="bg-teal-800 mt-10 experience-spacing"
       style={{ fontFamily: "Montserrat" }}
     >
       <h1
@@ -22,7 +22,9 @@ function Experience() {
       >
         EXPERIENCE
       </h1>
-      <VerticalTimeline>
+
+      <div>
+      <VerticalTimeline >
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(995,995,995)", color: "#fff" }}
@@ -83,6 +85,7 @@ function Experience() {
 
         {/* <VerticalTimelineElement
           className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(995,995,995)", color: "#fff" }}
           date="2006 - 2008"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon=""
@@ -94,6 +97,7 @@ function Experience() {
           <p>User Experience, Visual Design</p>
         </VerticalTimelineElement> */}
       </VerticalTimeline>
+      </div>
     </div>
   );
 }

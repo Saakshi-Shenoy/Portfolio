@@ -28,17 +28,17 @@ function About(props) {
   };
 
   return (
-    <div id="about" className="pt-20 md:h-[87vh]">
+    <div id="about" className="pt-20 ">
       <Header />
       <section className="text-gray-600 body-font ">
         <div className="container px-5 py-8 mt-5 flex flex-row">
           <div className="lg:w-4/6 mx-auto">
-            <div className="flex flex-col sm:flex-row mt-5">
+            <div className="flex flex-col sm:flex-row mt-10">
               <div className="sm:w-1/3 text-center sm:pr-8 sm:py-7" data-aos="fade-right">
                 <div className="rounded-full inline-flex items-center justify-center text-gray-400">
                   <img
                     src={ME}
-                    className="mb-3 rounded-full h-60 w-55"
+                    className="mb-3 rounded-full h-60 w-65"
                     alt="Saakshi Shenoy"
                   />
                 </div>

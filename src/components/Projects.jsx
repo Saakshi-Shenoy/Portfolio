@@ -4,18 +4,18 @@ import Jiffy from "../assets/jiffy.png";
 import Catalysis from "../assets/catalysis.png";
 import SmartSpend from "../assets/smartspend.png";
 import Hackman from "../assets/HackMan.png";
+import "../App.css";
 
 function Projects() {
   return (
-    <div id="projects" className="bg-white bg-cover lg:h-[93vh]">
+    <div id="projects" className="bg-white bg-cover">
       <section
         className="text-gray-600 body-font"
         style={{ fontFamily: "Montserrat" }}
       >
         <div className="container px-5 py-5 mx-auto">
           <h1
-            className="sm:text-3xl text-3xl text-teal-800 font-bold title-font mb-12 text-gray-900 items-center text-center justify-center"
-            style={{ fontSize: "2.5em", fontWeight: "730", paddingTop: "100px" }}
+            className="sm:text-3xl text-3xl text-teal-800 font-bold title-font mb-12 text-gray-900 items-center text-center justify-center projects-spacing"
           >
             PROJECTS
           </h1>
