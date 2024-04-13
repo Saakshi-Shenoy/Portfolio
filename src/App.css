@@ -10,7 +10,7 @@
 
 @media (min-width:767px) and (max-width:1024px){
     .projects-spacing{
-        padding-top: 12%;
+        padding-top: 10%;
     }
 }
 
@@ -23,3 +23,35 @@
         padding-bottom: 8%;
     }
 }
+
+.tech-icons {
+    font-size: 2.7em !important;
+    margin: 15px !important;
+    padding: 10px !important;
+    opacity: 0.93 !important;
+    border: 1.7px solid rgba(87, 140, 163, 0.637) !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+    border-radius: 5px !important;
+    display: table !important;
+    box-shadow: 4px 5px 4px 3px rgba(95, 87, 103, 0.137) !important;
+    overflow: hidden !important;
+    transition: all 0.4s ease 0s !important;
+  }
+  
+  @media (max-width: 767px) {
+    .tech-icons {
+      margin: 10px !important;
+    }
+  }
+  
+  .tech-icons:hover {
+    transform: scale(1.05) !important;
+    overflow: hidden !important;
+    border: 2.2px solid rgba(18, 98, 152, 0.883) !important;
+  }
+
+  .tech-icon-images {
+    padding: 20px !important;
+    line-height: 1.6 !important;
+  }

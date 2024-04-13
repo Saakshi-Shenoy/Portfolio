@@ -3,29 +3,17 @@ import './App.css';
 import About from './components/About.jsx';
 import Projects from './components/Projects.jsx';
 import Experience from './components/Experience.jsx';
+import Skills from './components/Skills.jsx';
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-  //   <Router>
-  //   <div>
-  //     <Header />
-  //     <Routes>
-  //       <Route path="/" element={<About />} />
-  //       <Route path="/about" element={<About />} />
-  //       <Route path="/projects" element={<Projects />} />
-  //       <Route path="/experience" element={<Experience />} />
-  //     </Routes>
-  //   </div>
-  // </Router>
-
    <div className='App'>
         <About />
+        <Skills />
         <Projects />
         <Experience />
       </div>
-   
-
   );
 }
 
