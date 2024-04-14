@@ -9,9 +9,7 @@ function Header() {
   };
 
   const scrollRef = useRef();
-
   const scrollToSection = (item) => {
-    // Scroll to the corresponding section
     if (scrollRef.current) {
       scrollRef.current.scrollIntoView({ behavior: 'smooth' });
       setIsOpen(false);
@@ -69,7 +67,6 @@ function Header() {
             <a
               href="/#about"
               className="text-white font-semibold text-xl duration-500 ease-in-out hover:scale-110"
-              // onClick={() => scrollToSection("about")}
             >
               About
             </a>

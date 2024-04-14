@@ -1,6 +1,5 @@
 import React from "react";
 import Jiffy from "../assets/jiffy.png";
-// import Newsmon from "../assets/newsmon.png";
 import Catalysis from "../assets/catalysis.png";
 import SmartSpend from "../assets/smartspend.png";
 import Hackman from "../assets/HackMan.png";
