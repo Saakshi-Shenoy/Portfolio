@@ -25,7 +25,7 @@ function About(props) {
   });
 
   const emailAddress = "shenoy.saakshi910@gmail.com";
-  // https://drive.google.com/u/0/uc?id=1OenKMmwgl2KXui96VK-cuScG0rFLxa_Q&export=download
+  // https://drive.usercontent.google.com/u/0/uc?id=1XoNPwjyvRQD14Dx5TJ6likl9J_RJV7ka&export=download  --> for direct download w/o viewing;
 
   const handleDownload = () => {
     const fileUrl =
@@ -49,7 +49,7 @@ function About(props) {
                 <div className="rounded-full inline-flex items-center justify-center text-gray-400">
                   <img
                     src={ME}
-                    className="mb-3 rounded-full h-60 w-65"
+                    className="mb-3 rounded-full image-dimensions"
                     alt="Saakshi Shenoy"
                   />
                 </div>
@@ -106,13 +106,13 @@ function About(props) {
               <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left" data-aos="fade-in">
                 <h1
                   className="title-font sm:text-3xl mb-4 font-bold text-teal-800 pb-3"
-                  style={{ fontSize: "5em", fontFamily: "Montserrat" }}
+                  style={{ fontSize: "4.5em", fontFamily: "Montserrat" }}
                 >
                   Hello!<br className="hidden lg:inline-block"></br>
                 </h1>
                 <p
                   className="leading-relaxed text-md mb-5 mt-5"
-                  style={{ fontFamily: "Montserrat", fontSize: "1.1em" }}
+                  style={{ fontFamily: "Montserrat", fontSize: "1.05em" }}
                 >
                   Welcome to my portfolio! I'm a
                   dedicated developer with proficiency in the MERN stack, C, and
@@ -147,7 +147,7 @@ function About(props) {
           </div>
         </div>
       </section>
-      <div className="flex justify-center pb-5" data-aos="fade-up" data-aos-duration="1300">
+      <div className="flex justify-center pb-5 skills-spacing" data-aos="fade-up" data-aos-duration="1300">
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-9 gap-2">
           <div className="tech-icons">
             <CgCPlusPlus className="w-15 h-15 " />

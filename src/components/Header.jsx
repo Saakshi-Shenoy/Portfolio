@@ -62,8 +62,8 @@ function Header() {
           </div>
 
           <nav
-            className={`md:ml-auto flex flex-wrap items-center text-base justify-center gap-5 dropdown-menu ${
-              isOpen ? 'open' : ''
+            className={`md:ml-auto flex flex-wrap items-center text-base justify-center gap-5 ${
+              isOpen ? 'block' : 'hidden'
             } md:flex flex-col md:flex-row`}
           >
             <a
