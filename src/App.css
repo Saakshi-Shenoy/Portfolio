@@ -54,7 +54,7 @@
     border-radius: 5px !important;
     box-shadow: 4px 5px 4px 3px rgba(47, 45, 50, 0.137) !important;
     overflow: hidden !important;
-    transition: all 0.4s ease 0s !important;
+    transition: all 0.5s ease 0s !important;
   }
   
   @media (max-width: 767px) {
@@ -75,7 +75,7 @@
   }
 
 .skills-spacing{
-  padding-top: 1.5%;
+  padding-top: 2%;
 }
 
 @media (max-width:767px){

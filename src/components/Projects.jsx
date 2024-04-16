@@ -23,7 +23,7 @@ function Projects() {
             <div
               className="xl:w-1/4 md:w-1/2 p-4 duration-500 ease-in-out hover:scale-105"
               data-aos="zoom-in-up"
-              data-aos-duration="1700"
+              data-aos-duration="1500"
             >
               <a href="https://github.com/Saakshi-Shenoy/FoodApp">
                 <div className="bg-teal-800 p-6 rounded-lg">
@@ -53,7 +53,7 @@ function Projects() {
             <div
               className="xl:w-1/4 md:w-1/2 p-4 duration-500 ease-in-out hover:scale-105"
               data-aos="zoom-in-up"
-              data-aos-duration="1700"
+              data-aos-duration="1500"
             >
               <a href="https://github.com/Saakshi-Shenoy/SmartSpend">
                 <div className="bg-teal-800 p-6 rounded-lg">
@@ -83,7 +83,7 @@ function Projects() {
             <div
               className="xl:w-1/4 md:w-1/2 p-4 duration-500 ease-in-out hover:scale-105"
               data-aos="zoom-in-up"
-              data-aos-duration="1700"
+              data-aos-duration="1500"
             >
               <a href="https://github.com/Saakshi-Shenoy/Catalysis2.0">
                 <div className="bg-teal-800 p-6 rounded-lg">
@@ -112,8 +112,8 @@ function Projects() {
 
             <div
               className="xl:w-1/4 md:w-1/2 p-4 duration-500 ease-in-out hover:scale-105"
-              data-aos="zoom-in-up"
-              data-aos-duration="1700"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
             >
               <a href="https://hackmanv7.netlify.app/">
                 <div className="bg-teal-800 p-6 rounded-lg">

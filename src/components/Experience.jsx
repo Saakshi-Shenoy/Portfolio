@@ -44,6 +44,7 @@ function Experience() {
             facilitate the registration to events organised by the Department of
             Information Science and Engineering.
           </p>
+          <p className="text-gray-500 font-semibold lg:hidden md:hidden">November 2022 - present</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -63,6 +64,7 @@ function Experience() {
             <br /> Internship involved the development of a comprehensive Food
             Delivery Website.
           </p>
+          <p className="text-gray-500 font-semibold lg:hidden md:hidden">August 2023 - October 2023</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -81,6 +83,8 @@ function Experience() {
             UI Design, Frontend Development <br /> Internship ended with the
             completion of a Team Project.
           </p>
+          <p className="text-gray-500 font-semibold lg:hidden md:hidden">October 2022 - December 2022</p>
+
         </VerticalTimelineElement>
 
         {/* <VerticalTimelineElement
@@ -96,6 +100,7 @@ function Experience() {
           </h4>
           <p>User Experience, Visual Design</p>
         </VerticalTimelineElement> */}
+
       </VerticalTimeline>
       </div>
     </div>
