@@ -84,7 +84,6 @@ function Experience() {
             completion of a Team Project.
           </p>
           <p className="text-gray-500 font-semibold lg:hidden md:hidden">October 2022 - December 2022</p>
-
         </VerticalTimelineElement>
 
         {/* <VerticalTimelineElement
