@@ -7,6 +7,7 @@ import "react-vertical-timeline-component/style.min.css";
 import genesis from "../assets/genesis.png";
 import websa from "../assets/websa.jpg";
 import dsce from "../assets/dsce.jpg";
+import nokia from "../assets/nokia.jpg";
 import "../App.css";
 
 function Experience() {
@@ -25,6 +26,24 @@ function Experience() {
 
       <div>
       <VerticalTimeline >
+      <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(995,995,995)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(995,995,995)" }}
+          date="April 2024 - Present"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={<img src={nokia} alt="myLogo" className="rounded-full" />}
+        >
+          <h3 className="vertical-timeline-element-title text-black">Intern</h3>
+          <h4 className="vertical-timeline-element-subtitle text-black">
+            Nokia, Bangalore
+          </h4>
+          <p className="text-black">
+            Development of an Intent-based LLM for the purpose of Service Orchestration. <br />
+          </p>
+          <p className="text-gray-500 font-semibold lg:hidden md:hidden">April 2024 - Present</p>
+        </VerticalTimelineElement>
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(995,995,995)", color: "#fff" }}
@@ -85,20 +104,6 @@ function Experience() {
           </p>
           <p className="text-gray-500 font-semibold lg:hidden md:hidden">October 2022 - December 2022</p>
         </VerticalTimelineElement>
-
-        {/* <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(995,995,995)", color: "#fff" }}
-          date="2006 - 2008"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon=""
-        >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
-        </VerticalTimelineElement> */}
 
       </VerticalTimeline>
       </div>

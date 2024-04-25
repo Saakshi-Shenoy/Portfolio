@@ -112,7 +112,7 @@ function Projects() {
 
             <div
               className="xl:w-1/4 md:w-1/2 p-4 duration-500 ease-in-out hover:scale-105"
-              data-aos="zoom-in"
+              data-aos="zoom-in-up"
               data-aos-duration="1500"
             >
               <a href="https://hackmanv7.netlify.app/">
