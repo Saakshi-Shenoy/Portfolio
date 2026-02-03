@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { BsDownload, BsLinkedin, BsGithub } from "react-icons/bs";
+import {  BsLinkedin, BsGithub } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
 import Header from "./Header";
-import { FaCode, FaRocket, FaBrain } from "react-icons/fa";
 import ME from "../assets/me.jpeg";
-import Aos from "aos";
 import "aos/dist/aos.css";
 import { CgCPlusPlus } from "react-icons/cg";
 import {
@@ -21,19 +18,6 @@ import { SiExpress, SiMysql } from "react-icons/si";
 import "../App.css";
 
 function About(props) {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isHovering, setIsHovering] = useState(false);
-
-  useEffect(() => {
-    Aos.init({ duration: 1300, once: false });
-
-    const handleMouseMove = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
 
   const emailAddress = "shenoy.saakshi910@gmail.com";
 
