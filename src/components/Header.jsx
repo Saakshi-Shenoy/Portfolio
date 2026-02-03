@@ -1,8 +1,9 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "../App.css";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -16,76 +17,97 @@ function Header() {
     }
   };
 
-  return (
-    <div id="header" style={{ fontFamily: "Montserrat" }}>
-      <header className="fixed top-0 z-50 sm:fixed w-screen text-gray-400 bg-teal-800 body-font ">
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <div className="flex justify-between items-center w-full md:w-auto">
-            <a
-              href="/"
-              className="flex title-font font-medium items-center text-white mb-4 md:mb-0"
-            >
-              <span className="self-center whitespace-nowrap text-3xl font-bold md:ml-10 lg:ml-10 text-white md:mt-2">
-                Saakshi's Portfolio
-              </span>
-            </a>
+  // Detect scroll for navbar effect
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
+  const navLinks = [
+    { href: "/#about", label: "About" },
+    { href: "/#projects", label: "Projects" },
+    { href: "/#experience", label: "Experience"},
+  ];
+
+  return (
+    <div id="header" className="font-heading">
+      <header 
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+          scrolled 
+            ? 'navbar-scrolled backdrop-blur-xl bg-slate-900/80 shadow-2xl shadow-teal-500/10' 
+            : 'backdrop-blur-md bg-slate-900/60'
+        }`}
+      >
+        <div className="container mx-auto px-6 py-4">
+          <div className="flex justify-between items-center">
+          
+
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center gap-2">
+              {navLinks.map((link, idx) => (
+                <a
+                  key={idx}
+                  href={link.href}
+                  onClick={() => scrollToSection(link.label.toLowerCase())}
+                  className="nav-link group"
+                >
+                  <span className="nav-link-icon">{link.icon}</span>
+                  <span className="nav-link-text text-xl">{link.label}</span>
+                  <div className="nav-link-indicator"></div>
+                </a>
+              ))}
+            </nav>
+
+            {/* Mobile Menu Button */}
             <button
               onClick={toggleMenu}
-              className="md:hidden inline-flex items-center justify-center mb-4 rounded-md text-gray-400 hover:text-white focus:outline-none"
+              className="md:hidden mobile-menu-button group"
+              aria-label="Toggle menu"
             >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                {isOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                )}
-              </svg>
+              <div className="relative w-6 h-5 flex flex-col justify-between">
+                <span className={`menu-line ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+                <span className={`menu-line ${isOpen ? 'opacity-0' : ''}`}></span>
+                <span className={`menu-line ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+              </div>
             </button>
           </div>
 
-          <nav
-            className={`md:ml-auto flex flex-wrap items-center text-base justify-center gap-5 ${
-              isOpen ? 'block' : 'hidden'
-            } md:flex flex-col md:flex-row`}
-          >
-            <a
-              href="/#about"
-              className="text-white font-semibold text-xl duration-500 ease-in-out hover:scale-110"
-            >
-              About
-            </a>
-            <a
-              href="/#projects" 
-              className="text-white font-semibold text-xl duration-500 ease-in-out hover:scale-110"
-              onClick={() => scrollToSection("projects")}
-            >
-              Projects
-            </a>
-            <a
-              href="/#experience"
-              className="mr-5 text-white font-semibold text-xl duration-500 ease-in-out hover:scale-110"
-              onClick={() => scrollToSection("experience")}
-            >
-              Experience
-            </a>
-          </nav>
+          {/* Mobile Navigation */}
+          <div className={`mobile-nav ${isOpen ? 'mobile-nav-open' : ''}`}>
+            <div className="flex flex-col gap-2 py-4">
+              {navLinks.map((link, idx) => (
+                <a
+                  key={idx}
+                  href={link.href}
+                  onClick={() => {
+                    scrollToSection(link.label.toLowerCase());
+                    setIsOpen(false);
+                  }}
+                  className="mobile-nav-link group"
+                  style={{ animationDelay: `${idx * 0.1}s` }}
+                >
+                  <span className="text-2xl">{link.icon}</span>
+                  <span className="font-semibold text-lg">{link.label}</span>
+                  <svg 
+                    className="w-5 h-5 text-teal-400 group-hover:translate-x-1 transition-transform" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              ))}
+              
+            </div>
+          </div>
         </div>
+
+        {/* Bottom Border Glow */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-teal-500/50 to-transparent"></div>
       </header>
     </div>
   );
