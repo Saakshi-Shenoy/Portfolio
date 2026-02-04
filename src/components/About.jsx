@@ -11,6 +11,7 @@ import {
   DiMongodb,
   DiPython,
   DiGit,
+  DiDocker,
   DiDotnet,
 } from "react-icons/di";
 import { SiCsharp } from "react-icons/si";
@@ -36,9 +37,10 @@ const handleView = () => {
     { icon: DiMongodb, name: "MongoDB", color: "hover:text-green-500" },
     { icon: SiMysql, name: "MySQL", color: "hover:text-blue-600" },
     { icon: DiGit, name: "Git", color: "hover:text-orange-600" },
+    { icon: DiDocker, name: "Docker", color: "hover:text-blue-600" },
     { icon: DiPython, name: "Python", color: "hover:text-blue-500" },
     { icon: SiCsharp, name: "Git", color: "hover:text-orange-600" },
-    { icon: DiDotnet, name: "Python", color: "hover:text-blue-500" }
+    { icon: DiDotnet, name: "Dotnet", color: "hover:text-blue-500" }
   ];
 
   return (

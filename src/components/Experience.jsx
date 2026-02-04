@@ -117,7 +117,6 @@ function Experience() {
               contentArrowStyle={{
                 borderRight: "7px solid rgba(15, 23, 42, 0.8)"
               }}
-              date={exp.date}
               iconStyle={{
                 background: exp.color,
                 boxShadow: `0 0 0 4px rgba(15, 23, 42, 1), 0 0 20px ${exp.color}`,
@@ -154,6 +153,10 @@ function Experience() {
                     <FiBriefcase className="w-4 h-4 text-teal-400" />
                     {exp.company}
                   </div>
+                  <div className="flex items-center gap-2 text-slate-400 text-sm mb-2">
+                      <FiCalendar className="w-4 h-4 text-purple-400" />
+                      {exp.date}
+                    </div>
                   <div className="flex items-center gap-2 text-slate-400 text-sm">
                     <FiMapPin className="w-4 h-4" />
                     {exp.location}
@@ -164,12 +167,6 @@ function Experience() {
                 <p className="text-slate-300 leading-relaxed text-sm">
                   {exp.description}
                 </p>
-
-                {/* Date Badge for Mobile */}
-                <div className="flex items-center gap-2 text-slate-400 text-sm lg:hidden">
-                  <FiCalendar className="w-4 h-4" />
-                  {exp.date}
-                </div>
 
                 {/* Bottom Gradient Line */}
                 <div className={`h-1 w-full bg-gradient-to-r ${exp.gradient} rounded-full mt-4`}></div>
