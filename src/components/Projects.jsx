@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import Jiffy from "../assets/jiffy.png";
 import Catalysis from "../assets/catalysis.png";
-import SmartSpend from "../assets/smartspend.png";
 import Hackman from "../assets/HackMan.png";
+import Nokia from "../assets/nokia_project.png"
+import Armadillo from "../assets/Armadillo.png"
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
@@ -24,15 +25,6 @@ function Projects() {
       tech: ["MongoDB", "Express", "React", "Node.js"]
     },
     {
-      title: "SMARTSPEND",
-      category: "FERN STACK",
-      description: "An expense tracking website that includes the features of budget management, financial insights, peer-to-peer lending and reminders.",
-      image: SmartSpend,
-      link: "https://github.com/Saakshi-Shenoy/SmartSpend",
-      gradient: "from-blue-500 to-purple-600",
-      tech: ["Firebase", "Express", "React", "Node.js"]
-    },
-    {
       title: "CATALYSIS v2.0",
       category: "MERN STACK",
       description: "Contribution to an intra-college event website for a 3-Day Technical fest, Catalysis v2.0 organized by the Department of ISE, DSCE.",
@@ -42,6 +34,15 @@ function Projects() {
       tech: ["MongoDB", "Express", "React", "Node.js"]
     },
     {
+    title: "Intent-Based LLM for Service Orchestration",
+    category: "GENAI / NLP SYSTEM",
+    description: "A GenAI-powered intent orchestration system that converts natural language inputs into structured service intents using LLaMA 3, compliant with TMF921 Intent Management API standards. The system processes 500+ service intents and maps user queries into JSON-LD payloads to enable intelligent automation and resource management.",
+    image: Nokia, 
+    link: "https://github.com/Saakshi-Shenoy", 
+    gradient: "from-indigo-500 to-blue-600",
+    tech: ["Python", "LLaMA 3", "NLP", "TMF921", "JSON-LD", "REST APIs"]
+    },
+    {
       title: "HACKMAN v7.0",
       category: "FULL STACK",
       description: "Contribution to the website for an extravagant 30-hour inter-collegiate Hackathon organized by the Department of ISE at DSCE.",
@@ -49,7 +50,17 @@ function Projects() {
       link: "https://hackmanv7.netlify.app/",
       gradient: "from-pink-500 to-orange-600",
       tech: ["Full Stack", "Web Development"]
+    },
+    {
+      title: "Armadillo",
+      category: "FULL STACK | CYBERSECURITY",
+      description: "Cybersecurity analytics platform providing breach intelligence and real-time alerts, built with React and Python-based backend services.",
+      image: Armadillo, 
+      link: "https://github.com/Saakshi-Shenoy/Sentinel", 
+      gradient: "from-pink-500 to-orange-600",
+      tech: ["React", "JavaScript", "Python", "Flask", "Django", "Web Scraping", "Cybersecurity"]
     }
+
   ];
 
   return (
@@ -75,7 +86,7 @@ function Projects() {
           </h1>
           
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            A showcase of my recent work in web development and full-stack applications
+            A showcase of my work in web development and full-stack applications
           </p>
           
           <div className="relative mx-auto w-32">
