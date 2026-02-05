@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import Jiffy from "../assets/jiffy.png";
 import Catalysis from "../assets/catalysis.png";
 import Hackman from "../assets/HackMan.png";
-import Nokia from "../assets/nokia_project.png"
-import Armadillo from "../assets/Armadillo.png"
+import Nokia from "../assets/nokia_project.png";
+import Armadillo from "../assets/Armadillo.png";
+import AuthAuth from "../assets/AuthAuth.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
@@ -59,6 +60,15 @@ function Projects() {
       link: "https://github.com/Saakshi-Shenoy/Sentinel", 
       gradient: "from-pink-500 to-orange-600",
       tech: ["React", "JavaScript", "Python", "Flask", "Django", "Web Scraping", "Cybersecurity"]
+    },
+    {
+      title: "Auth-and-Auth",
+      category: "FULL STACK",
+      description: "MERN-based authentication platform with JWT, refresh token rotation, HTTP-only cookies, RBAC, protected APIs, and Google OAuth 2.0 support.",
+      image: AuthAuth, 
+      link: "https://github.com/Saakshi-Shenoy/Auth-and-Auth", 
+      gradient: "from-blue-500 to-indigo-600",
+      tech: ["MongoDB", "Express.js", "React", "Node.js", "JWT", "RBAC", "OAuth 2.0"]
     }
 
   ];
