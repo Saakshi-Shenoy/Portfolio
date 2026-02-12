@@ -24,7 +24,7 @@ function About(props) {
 
 const handleView = () => {
   const fileUrl =
-    "https://drive.google.com/file/d/1QGbFZstA1W9W-M81kQI4M6otZm4MPQdT/view?usp=sharing";
+    "https://drive.google.com/file/d/1J74GoeyvhMyGuSHIZ5kQajmH_SHlPztk/view?usp=sharing";
   window.open(fileUrl, "_blank", "noopener,noreferrer");
 };
 
